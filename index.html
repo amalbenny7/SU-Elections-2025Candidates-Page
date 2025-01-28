@@ -1,87 +1,226 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTU Election Candidates</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-    <div class="accordion beige">
-        <!-- President -->
-        <div class="accordion beige">
-            <div class="accordion-title" onclick="toggleAccordion('President')">
-                <h2>President</h2>
-            </div>
-            <div class="accordion-content" id="President">
-                <!-- First Candidate -->
-                <div class="candidate-card">
-                    <img src="https://via.placeholder.com/150" alt="Candidate Photo">
-                    <div class="info">
-                        <h3>Alice Johnson - President</h3>
-                        <p>Committed to enhancing student governance and campus life. Aims to expand library resources and improve student services.</p>
-                        <div class="social-links">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Second Candidate -->
-                <div class="candidate-card">
-                    <img src="https://via.placeholder.com/150" alt="Candidate Photo">
-                    <div class="info">
-                        <h3>Bob Smith - President</h3>
-                        <p>Dedicated to promoting student welfare and community involvement. Plans to enhance campus safety and outreach programs.</p>
-                        <div class="social-links">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- VP Education -->
-        <div class="accordion beige">
-            <div class="accordion-title" onclick="toggleAccordion('VPEducation')">
-                <h2>VP Education</h2>
-            </div>
-            <div class="accordion-content" id="VPEducation">
-                <!-- First Candidate -->
-                <div class="candidate-card">
-                    <img src="https://via.placeholder.com/150" alt="Candidate Photo">
-                    <div class="info">
-                        <h3>Claire Thomas - VP Education</h3>
-                        <p>Focuses on enhancing educational quality and access. Advocates for more inclusive curriculum and teaching methods.</p>
-                        <div class="social-links">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Second Candidate -->
-                <div class="candidate-card">
-                    <img src="https://via.placeholder.com/150" alt="Candidate Photo">
-                    <div class="info">
-                        <h3>Dan Miles - VP Education</h3>
-                        <p>Champion of technology integration in classrooms and enhanced student support services.</p>
-                        <div class="social-links">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Additional roles follow the same structure -->
+<button class="accordion beige">
+    <h3>President</h3>
+    </button><!-- Candidate 1 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>John Doe - President</h3>
+    
+    <p>Passionate about improving campus life and advocating for student rights. Focused on mental health and affordable housing.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
     </div>
-</body>
-
-
-    <script src="scripts.js"></script>
-</body>
-</html>
+    </div>
+    <!-- Candidate 2 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Jane Miller - VP Education</h3>
+    
+    <p>Dedicated to enhancing the academic experience by improving library access and implementing advanced learning tools.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 3 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Emily Carter - VP Welfare</h3>
+    
+    <p>Focused on promoting mental health awareness and providing more support services to improve student well-being.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 4 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>David Brown - VP Sport</h3>
+    
+    <p>Committed to expanding sports programs and ensuring equal opportunities for all students to participate in athletics.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 5 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Sarah Lee - VP Opportunities</h3>
+    
+    <p>Advocating for more career development workshops and creating partnerships with leading industries for internships.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 6 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Chris Wilson - VP Postgraduate</h3>
+    
+    <p>Aims to provide better support for postgraduate students through research funding opportunities and networking events.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 7 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Alice White - VP Community</h3>
+    
+    <p>Passionate about fostering community engagement and addressing environmental sustainability on campus.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 8 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Michael Green - VP Diversity</h3>
+    
+    <p>Dedicated to creating a more inclusive campus by increasing representation and support for underrepresented groups.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 9 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Laura Taylor - VP Innovation</h3>
+    
+    <p>Plans to enhance technological access for students and promote innovative initiatives across the university.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 10 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Tom Harris - VP Sustainability</h3>
+    
+    <p>Focused on implementing eco-friendly policies and promoting sustainable practices within the student body.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <button class="accordion beige">
+    
+    <h3>VP Education</h3>
+    </button><!-- Candidate 1 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>John Doe - President</h3>
+    
+    <p>Passionate about improving campus life and advocating for student rights. Focused on mental health and affordable housing.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 2 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Jane Miller - VP Education</h3>
+    
+    <p>Dedicated to enhancing the academic experience by improving library access and implementing advanced learning tools.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 3 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Emily Carter - VP Welfare</h3>
+    
+    <p>Focused on promoting mental health awareness and providing more support services to improve student well-being.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 4 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>David Brown - VP Sport</h3>
+    
+    <p>Committed to expanding sports programs and ensuring equal opportunities for all students to participate in athletics.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 5 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Sarah Lee - VP Opportunities</h3>
+    
+    <p>Advocating for more career development workshops and creating partnerships with leading industries for internships.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 6 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Chris Wilson - VP Postgraduate</h3>
+    
+    <p>Aims to provide better support for postgraduate students through research funding opportunities and networking events.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 7 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Alice White - VP Community</h3>
+    
+    <p>Passionate about fostering community engagement and addressing environmental sustainability on campus.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 88 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Michael Green - VP Diversity</h3>
+    
+    <p>Dedicated to creating a more inclusive campus by increasing representation and support for underrepresented groups.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 9 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Laura Taylor - VP Innovation</h3>
+    
+    <p>Plans to enhance technological access for students and promote innovative initiatives across the university.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    <!-- Candidate 10 -->
+    
+    <div class="candidate-card"><img alt="Candidate Photo" src="https://via.placeholder.com/150" />
+    <div class="info">
+    <h3>Tom Harris - VP Sustainability</h3>
+    
+    <p>Focused on implementing eco-friendly policies and promoting sustainable practices within the student body.</p>
+    
+    <div class="social-links"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-linkedin"></a></div>
+    </div>
+    </div>
+    

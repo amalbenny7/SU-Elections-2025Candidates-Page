@@ -1,51 +1,134 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    background: #FFD9B3; /* Beige background for a warm tone */
-}
-
-.accordion {
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.accordion-item {
-    background: #FFFFFF; /* Keep individual section backgrounds white */
-    border-left: 5px solid #C8ED8E; /* Use a thinner green accent border for a modern look */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px; /* Rounded corners for a softer, modern look */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+:root {
+    --beige: #FFD9B3;
+    --green: #68A900;
+    --hover-green: #457700;
 }
 
 .accordion-title h2 {
-    color: #FFFFFF; /* White text for contrast */
-    background-color: #9DE8F4; /* Soft blue for title background */
-    padding: 10px 20px;
-    border-radius: 20px; /* Rounded corners for the title for modern styling */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for the title */
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 15px 0;
+    font-weight: bold;
+    color: #000;
+}
+
+.accordion {
     cursor: pointer;
-    display: inline-block;
-    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: 0.3s ease;
+    background-color: var(--beige);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-title {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-title:after {
+    content: "\002B"; /* Plus icoon */
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+.accordion-title.active:after {
+    transform: rotate(45deg); /* Change this to rotate for visual feedback */
 }
 
 .accordion-content {
-    display: none; /* Hide content initially */
-    padding: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+.accordion-content.active {
+    max-height: 1000px; /* Large enough for dynamic content */
+    padding: 15px 15px 20px;
 }
 
 .candidate-card {
-    background: #FFFFFF; /* White background for candidate cards to stand out */
-    border: 1px solid #C8ED8E; /* Subtle green border */
+    background: #FFFFFF;
+    border: 2px solid #C8ED8E;
     padding: 20px;
-    border-radius: 10px; /* Rounded corners for cards */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .candidate-card img {
-    width: 100px; /* Fixed width for images */
-    height: 100px; /*
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.candidate-card .info {
+    flex: 1;
+}
+
+.candidate-card h3 {
+    font-size: 1.2em;
+    color: var(--green);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.candidate-card p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.candidate-card .social-links a {
+    margin-right: 10px;
+    color: var(--green);
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.candidate-card .social-links a:hover {
+    color: var(--hover-green);
+}
+
+@media (max-width: 768px) {
+    .candidate-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .candidate-card img {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .candidate-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .candidate-card h3 {
+        font-size: 1em;
+    }
+
+    .candidate-card p {
+        font-size: 0.9em;
+    }
+}
