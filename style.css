@@ -67,61 +67,72 @@
 .panel p {
     font-size: 1.1rem !important;
 }
-
-
+/* Candidate Card Container */
 .candidate-card {
     background: #FFFFFF;
-    border: 2px solid #2ECC71; /* More intense green */
+    border: 2px solid #C8ED8E; /* Elections green border */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Strong outer shadow */
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
+/* Candidate Image */
 .candidate-card img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-right: 20px;
+    object-fit: cover; /* Keeps the image properly cropped */
 }
 
+/* Inner Box (Content Section) */
 .candidate-card .info {
     flex: 1;
-    background: #FFFFFF; /* White background */
+    background: #FFFFFF; /* White background for the inner box */
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for differentiation */
-    padding: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Prominent shadow for the inner box */
+    padding: 20px; /* Adequate padding for the inner box content */
+    margin-top: 10px; /* Adds spacing between the image and content */
+    overflow-wrap: break-word; /* Prevents long text from breaking the layout */
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
+/* Candidate Name and Role */
 .candidate-card h3 {
-    font-size: 1.2em;
-    color: var(--green);
+    font-size: 1.4em;
+    color: #9DE8F4; /* Matches the green border */
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+/* Candidate Description */
 .candidate-card p {
     font-size: 1em;
     color: #333;
     line-height: 1.6;
     margin: 0;
+    max-width: 100%;
 }
 
+/* Social Links */
 .candidate-card .social-links a {
     margin-right: 10px;
-    color: var(--green);
+    color: #2ECC71;
     font-size: 1.2em;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .candidate-card .social-links a:hover {
-    color: var(--hover-green);
+    color: var(--hover-green); /* Subtle lighter green on hover */
 }
 
+/* Responsive Adjustments for Tablets */
 @media (max-width: 768px) {
     .candidate-card {
         flex-direction: column;
@@ -130,11 +141,17 @@
     }
 
     .candidate-card img {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         margin-right: 0;
+    }
+
+    .candidate-card .info {
+        padding: 15px; /* Adjust padding for smaller screens */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for smaller screens */
     }
 }
 
+/* Responsive Adjustments for Mobile Devices */
 @media (max-width: 480px) {
     .candidate-card img {
         width: 100px;
@@ -142,10 +159,14 @@
     }
 
     .candidate-card h3 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .candidate-card p {
         font-size: 0.9em;
+    }
+
+    .candidate-card .info {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Slightly reduced shadow for smaller screens */
     }
 }
