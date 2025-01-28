@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #FFD9B3; /* Beige background for a warm tone */
+}
+
+.accordion {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.accordion-item {
+    background: #FFFFFF; /* Keep individual section backgrounds white */
+    border-left: 5px solid #C8ED8E; /* Use a thinner green accent border for a modern look */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners for a softer, modern look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.accordion-title h2 {
+    color: #FFFFFF; /* White text for contrast */
+    background-color: #9DE8F4; /* Soft blue for title background */
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded corners for the title for modern styling */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for the title */
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.accordion-content {
+    display: none; /* Hide content initially */
+    padding: 20px;
+}
+
+.candidate-card {
+    background: #FFFFFF; /* White background for candidate cards to stand out */
+    border: 1px solid #C8ED8E; /* Subtle green border */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.candidate-card img {
+    width: 100px; /* Fixed width for images */
+    height: 100px; /*

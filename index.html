@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTU Election Candidates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="accordion">
+        <!-- President -->
+        <div class="accordion-item">
+            <div class="accordion-title" onclick="toggleAccordion('President')">
+                <h2>President</h2>
+            </div>
+            <div class="accordion-content" id="President">
+                <!-- First Candidate -->
+                <div class="candidate-card">
+                    <img src="https://via.placeholder.com/150" alt="Candidate Photo">
+                    <div class="info">
+                        <h3>Alice Johnson - President</h3>
+                        <p>Committed to enhancing student governance and campus life. Aims to expand library resources and improve student services.</p>
+                        <div class="social-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Candidate -->
+                <div class="candidate-card">
+                    <img src="https://via.placeholder.com/150" alt="Candidate Photo">
+                    <div class="info">
+                        <h3>Bob Smith - President</h3>
+                        <p>Dedicated to promoting student welfare and community involvement. Plans to enhance campus safety and outreach programs.</p>
+                        <div class="social-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- VP Education -->
+        <div class="accordion-item">
+            <div class="accordion-title" onclick="toggleAccordion('VPEducation')">
+                <h2>VP Education</h2>
+            </div>
+            <div class="accordion-content" id="VPEducation">
+                <!-- First Candidate -->
+                <div class="candidate-card">
+                    <img src="https://via.placeholder.com/150" alt="Candidate Photo">
+                    <div class="info">
+                        <h3>Claire Thomas - VP Education</h3>
+                        <p>Focuses on enhancing educational quality and access. Advocates for more inclusive curriculum and teaching methods.</p>
+                        <div class="social-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Candidate -->
+                <div class="candidate-card">
+                    <img src="https://via.placeholder.com/150" alt="Candidate Photo">
+                    <div class="info">
+                        <h3>Dan Miles - VP Education</h3>
+                        <p>Champion of technology integration in classrooms and enhanced student support services.</p>
+                        <div class="social-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Additional roles follow the same structure -->
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
