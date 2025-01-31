@@ -52,14 +52,20 @@
     content: "\2212"; /* Minus symbol */
 }
 
-/* Panel (hidden content) */
+
+
+/* Panel (Hidden by Default) */
 .panel {
-    display: none; /* Hidden by default */
-    padding: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    padding: 0 20px;
     background-color: #fff;
     color: #000;
     border-radius: 10px;
 }
+
+
 
 
 
