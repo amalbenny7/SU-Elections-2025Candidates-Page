@@ -54,14 +54,14 @@
 
 /* Panel (hidden content) */
 .panel {
-    padding: 0 20px;
+    display: none; /* Hidden by default */
+    padding: 20px;
     background-color: #fff;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
     color: #000;
     border-radius: 10px;
 }
+
+
 
 /* Panel paragraph styles */
 .panel p {
