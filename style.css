@@ -4,7 +4,7 @@
     --hover-green: #457700;
 }
 
-/* Accordion heading styles */
+/* Accordion Heading Styles */
 .accordion h3 {
     font-size: 1.4rem !important;
     margin: 0 !important;
@@ -13,166 +13,97 @@
     color: #fff !important;
 }
 
-/* Accordion container styles */
+/* Accordion Container */
 .accordion {
-    cursor: pointer;
-    padding: 12px;
-    margin: 0 0 10px 0;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-    display: flex;
-    align-items: center;
+    cursor: pointer !important;
+    padding: 12px !important;
+    margin: 0 0 10px 0 !important;
+    width: 100% !important;
+    border: none !important;
+    text-align: left !important;
+    outline: none !important;
+    transition: 0.4s ease-in-out !important;
+    display: flex !important;
+    align-items: center !important;
+    background-color: var(--beige) !important;
 }
 
-/* Beige accordion */
-.accordion.beige {
-    background-color: var(--beige);
-}
-
-/* Beige accordion heading for readability */
+/* Beige Accordion Heading */
 .accordion.beige h3 {
-    color: #000 !important; /* Black text for better readability */
+    color: #000 !important;
 }
 
-/* Accordion symbol (before element) */
+/* Accordion Symbol */
 .accordion:before {
-    content: "\002B";
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
-    float: left;
-    margin: 0 15px 0 15px;
+    content: "\002B" !important; /* Plus symbol */
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    float: left !important;
+    margin: 0 15px 0 15px !important;
 }
 
-/* Active state symbol */
+/* Active Accordion Symbol */
 .accordion.active:before {
-    content: "\2212"; /* Minus symbol */
+    content: "\2212" !important; /* Minus symbol */
 }
 
-
-
-/* Panel (Hidden by Default) */
+/* Panel Styling */
 .panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-    padding: 0 20px;
-    background-color: #fff;
-    color: #000;
-    border-radius: 10px;
+    max-height: 0 ;
+    overflow: hidden !important;
+    transition: max-height 0.5s ease-out, opacity 0.3s ease !important;
+    padding: 0 20px !important;
+    background-color: #fff !important;
+    color: #000 !important;
+    border-radius: 10px !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 
-
-
-
-
-/* Panel paragraph styles */
-.panel p {
-    font-size: 1.1rem !important;
+.accordion.active + .panel {
+    opacity: 1 !important;
+    visibility: visible !important;
+    max-height: 500px ; ;
 }
-/* Candidate Card Container */
+
+/* Candidate Card */
 .candidate-card {
-    background: #FFFFFF;
-    border: 2px solid #C8ED8E; /* Elections green border */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Strong outer shadow */
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+    background: #FFFFFF !important;
+    border: 2px solid #C8ED8E !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 20px !important;
 }
 
 /* Candidate Image */
 .candidate-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-right: 20px;
-    object-fit: cover; /* Keeps the image properly cropped */
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50% !important;
+    margin-right: 20px !important;
+    object-fit: cover !important;
 }
 
-/* Inner Box (Content Section) */
+/* Candidate Info */
 .candidate-card .info {
-    flex: 1;
-    background: #FFFFFF; /* White background for the inner box */
-    border-radius: 10px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Prominent shadow for the inner box */
-    padding: 20px; /* Adequate padding for the inner box content */
-    margin-top: 10px; /* Adds spacing between the image and content */
-    overflow-wrap: break-word; /* Prevents long text from breaking the layout */
-    word-wrap: break-word;
-    word-break: break-word;
-}
-
-/* Candidate Name and Role */
-.candidate-card h3 {
-    font-size: 1.4em;
-    color: #9DE8F4; /* Matches the green border */
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* Candidate Description */
-.candidate-card p {
-    font-size: 1em;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    max-width: 100%;
+    flex: 1 !important;
+    background: #FFFFFF !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
 }
 
 /* Social Links */
 .candidate-card .social-links a {
-    margin-right: 10px;
-    color: #2ECC71;
-    font-size: 1.2em;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    margin-right: 10px !important;
+    color: #2ECC71 !important;
+    font-size: 1.2em !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
 }
 
 .candidate-card .social-links a:hover {
-    color: var(--hover-green); /* Subtle lighter green on hover */
-}
-
-/* Responsive Adjustments for Tablets */
-@media (max-width: 768px) {
-    .candidate-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .candidate-card img {
-        margin-bottom: 15px;
-        margin-right: 0;
-    }
-
-    .candidate-card .info {
-        padding: 15px; /* Adjust padding for smaller screens */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for smaller screens */
-    }
-}
-
-/* Responsive Adjustments for Mobile Devices */
-@media (max-width: 480px) {
-    .candidate-card img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .candidate-card h3 {
-        font-size: 1.2em;
-    }
-
-    .candidate-card p {
-        font-size: 0.9em;
-    }
-
-    .candidate-card .info {
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Slightly reduced shadow for smaller screens */
-    }
+    color: var(--hover-green) !important;
 }
